@@ -1,6 +1,6 @@
 # ARM DevSummit 2021
 
-I've made a `.travis.yml` file specifically for ARM DevSummit 2021, specifically showing how a BFS builds on each architecture, `arch: arm64` and `arch: arm64-graviton`.
+I've made a `.travis.yml` file specifically for ARM DevSummit 2021, specifically showing how a Breadth-first searach builds on each architecture, `arch: arm64` and `arch: arm64-graviton`.
 
 The BFS I created: 
 
@@ -15,7 +15,7 @@ def shortest_distance(grid):
 
     matrix = [[[0,0] for i in range(len(grid[0]))] for j in range(len(grid))]
 
-    count = 0    # count how many building we have visited
+    count = 0  
     for i in range(len(grid)):
         for j in range(len(grid[0])):
             if grid[i][j] == 1:
@@ -35,7 +35,7 @@ def bfs(grid, matrix, i, j, count):
     while q:
         i, j, step = q.pop(0)
         for k, l in [(i-1,j), (i+1,j), (i,j-1), (i,j+1)]:
-            # only the position be visited by count times will append to queue
+         
             if 0<=k<len(grid) and 0<=l<len(grid[0]) and \
                     matrix[k][l][1]==count and grid[k][l]==0:
                 matrix[k][l][0] += step+1
