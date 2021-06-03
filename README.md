@@ -1,5 +1,4 @@
-# devsummit2021
-DevSummit 2021 .travis.yml 
+# DevSummit 2021
 
 I've made a `.travis.yml` file specifically for ARM DevSummit 2021, specifically showing how a BFS builds on each architecture, `arm64` and `arm64-graviton`.
 
