@@ -25,7 +25,7 @@ matrix:
        env:
         - LIB_PATH="/usr/bin/shared/x86_64/v1"
 
-     - name: "ARM DevSummit 2021 Python 3.7 on linux Arm64-Graviton2"
+     - name: "ARM DevSummit 2021 Python 3.7 on Linux Arm64 Graviton2"
        os: linux
        arch: arm64-graviton2
        language: python
@@ -44,5 +44,3 @@ before_install: skip
 install: skip
 script: skip
 after_success: skip
-             
-
