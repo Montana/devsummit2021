@@ -1,6 +1,6 @@
 # ARM DevSummit 2021
 
-I've made a `.travis.yml` file specifically for ARM DevSummit 2021, specifically showing how a Breadth-first searach builds on each architecture, `arch: arm64` and `arch: arm64-graviton`.
+I've made a `.travis.yml` file specifically for ARM DevSummit 2021, specifically showing how a Breadth-first searach builds on each architecture, `arch: arm64` and `arch: arm64-graviton2`.
 
 The BFS I created: 
 
